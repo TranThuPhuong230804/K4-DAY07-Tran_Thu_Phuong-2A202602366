@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "query": "Mức học bổng khuyến khích học tập kì cuối cho sinh viên loại Xuất sắc ngành CLC CNTT khóa QH-2022 là bao nhiêu?",
+    "gold_doc_id": "cap-hoc-bong-khuyen-khich-hoc-tap-ki-cuoi-thang-06-2026",
+    "gold_answer": "4.100.000 đồng/sinh viên/tháng (theo Quyết định số 1545/QĐ-ĐHCN).",
+    "expected_keywords": ["4.100.000", "Xuất sắc", "QH-2022"],
+    "filter": {
+      "audience": "student"
+    },
+    "category": "filter_required"
+  },
+  {
+    "id": 2,
+    "query": "Mỗi suất học bổng Vallet năm 2026 dành cho sinh viên Trường ĐHCN trị giá bao nhiêu và lễ trao học bổng diễn ra ở đâu?",
+    "gold_doc_id": "ket-qua-xet-chon-hoc-bong-vallet-2026",
+    "gold_answer": "Trị giá 34.000.000 đồng; tổ chức tại Hội trường Nhà Thái Học, Văn Miếu – Quốc Tử Giám (58 Quốc Tử Giám, Hà Nội) lúc 07h30 ngày 23/08/2026.",
+    "expected_keywords": ["34.000.000", "Thái Học", "Văn Miếu"],
+    "filter": null,
+    "category": "numerical_and_location"
+  },
+  {
+    "id": 3,
+    "query": "Sinh viên cần đáp ứng những tiêu chuẩn gì về GPA, rèn luyện và ngoại ngữ để được xét chọn Học bổng Tài năng Pegatron 2027?",
+    "gold_doc_id": "chuong-trinh-hoc-bong-tai-nang-pegatron-2027",
+    "gold_answer": "GPA năm học 2025-2026 từ 2.8 trở lên, kết quả rèn luyện loại Tốt trở lên, có khả năng dùng tiếng Anh/tiếng Trung và phải hoàn thành chứng chỉ tiếng Trung HSK3 trước khi thực tập tại công ty.",
+    "expected_keywords": ["2,8", "Tốt", "HSK3"],
+    "filter": null,
+    "category": "criteria"
+  },
+  {
+    "id": 4,
+    "query": "Hồ sơ đăng ký học bổng Đinh Thiện Lý dành cho sinh viên năm cuối gồm những giấy tờ gì và hạn nộp là khi nào?",
+    "gold_doc_id": "chuong-trinh-hoc-bong-dinh-thien-ly-nam-cuoi-2026-2027",
+    "gold_answer": "Đơn đăng ký online; bảng điểm tích lũy có xác nhận; bài luận tiếng Anh tối đa 500 từ; 1 thư giới thiệu; minh chứng NCKH/ngoại khóa; video giới thiệu <=3 phút; giấy tờ khó khăn (nếu có). Hạn trước 16h30 ngày 21/7/2026.",
+    "expected_keywords": ["500 từ", "21/7/2026"],
+    "filter": null,
+    "category": "procedure_and_deadline"
+  },
+  {
+    "id": 5,
+    "query": "Chương trình học bổng Goertek năm 2027 gồm những mô hình đào tạo nào và quyền lợi của từng mô hình là gì?",
+    "gold_doc_id": "chuong-trinh-hoc-bong-goertek-nam-2027",
+    "gold_answer": "Gồm 2 mô hình: 1) Đào tạo tại VN: học bổng 60 triệu đồng, gói 21.000.000đ/SV trả 2 lần, thực tập tại Goertek Vina; 2) Đào tạo tại TQ: học bổng 80 triệu đồng, học tại ĐH Sơn Đông, miễn học phí, KTX, vé máy bay khứ hồi, gói 25.000.000đ/SV trả 2 lần.",
+    "expected_keywords": ["60 triệu", "80 triệu", "21.000.000"],
+    "filter": null,
+    "category": "benefits_and_structure"
+  }
+]

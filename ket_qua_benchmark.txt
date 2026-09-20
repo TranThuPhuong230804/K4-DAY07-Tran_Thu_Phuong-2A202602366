@@ -1,0 +1,139 @@
+CHECKPOINT 6 - SCHOLARSHIP RETRIEVAL EVALUATION
+Embedding backend: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+=== STRATEGY: fixed (94 chunks) ===
+  Q1: Sau khi đăng ký trực tuyến, người học phải chuẩn bị và nộp minh chứng như thế nào?
+    1. score=0.7028 doc_id=hust-fami-scholarship-2025-2026 chunk=1
+    2. score=0.4788 doc_id=hust-fami-scholarship-2025-2026 chunk=2
+    3. score=0.4542 doc_id=hcmunre-freshman-scholarship-2025 chunk=7
+    doc_hit=True gold_rank=1 content_hit=True agent_correct=True points=2
+    agent: Sau đó, tất cả minh chứng cần nộp về Văn phòng Khoa tại C1-119 (Cô Nguyễn Thị Hải) từ: 12/11-20/11/2025.
+  Q2: Ba ngưỡng điểm xét tuyển của học bổng tân sinh viên TP.HCM năm 2025 là gì?
+    1. score=0.7880 doc_id=hcmunre-freshman-scholarship-2025 chunk=2
+    2. score=0.7526 doc_id=tdtu-scholarship-2025-2026 chunk=0
+    3. score=0.7034 doc_id=ou-admission-scholarship-2025 chunk=52
+    doc_hit=True gold_rank=1 content_hit=True agent_correct=True points=2
+    agent: + Theo hình thức xét điểm kỳ thi tốt nghiệp THPT năm 2025: có điểm trúng tuyển 3 môn thi từ 18 điểm trở lên (không tính điểm ưu tiên, không nhân hệ số). + Theo hình thức xét học bạ THPT: có điểm tổ hợp 3 môn xét tuyển vào trường từ 22 điểm trở lên (không tính điểm ưu tiên, không nhân hệ số) hoặc đạt
+  Q3: Học bổng theo chính sách chung của Đại học Khoa học Huế được cấp vào thời điểm nào?
+    1. score=0.6730 doc_id=husc-admission-scholarship-2025 chunk=1
+    2. score=0.6572 doc_id=husc-admission-scholarship-2025 chunk=12
+    3. score=0.6545 doc_id=ou-admission-scholarship-2025 chunk=4
+    doc_hit=True gold_rank=1 content_hit=False agent_correct=False points=0
+    agent: Không tìm thấy đủ thông tin trong ngữ cảnh truy xuất.
+  Q4: Quy định học bổng tuyển sinh khóa 2025 của Đại học Mở áp dụng cho năm nhóm đối tượng nào?
+    1. score=0.7446 doc_id=ou-admission-scholarship-2025 chunk=56
+    2. score=0.7344 doc_id=ou-admission-scholarship-2025 chunk=29
+    3. score=0.7171 doc_id=ou-admission-scholarship-2025 chunk=34
+    doc_hit=True gold_rank=1 content_hit=False agent_correct=False points=0
+    agent: Thủ khoa, Á khoa tuyển sinh toàn trường.
+  Q5: TDTU liệt kê những ngành kỹ thuật nào được áp dụng học bổng khuyến khích cho nữ sinh viên?
+    1. score=0.8746 doc_id=tdtu-scholarship-2025-2026 chunk=3
+    2. score=0.6424 doc_id=ou-admission-scholarship-2025 chunk=17
+    3. score=0.6210 doc_id=ou-admission-scholarship-2025 chunk=34
+    doc_hit=True gold_rank=1 content_hit=True agent_correct=True points=2
+    agent: - Học bổng khuyến khích cho nữ sinh viên học ngành kỹ thuật: 100% nữ sinh viên học các ngành kỹ thuật: Kỹ thuật điện, Kỹ thuật điện tử viễn thông, Kỹ thuật điện tử - viễn thông - chuyên ngành Kỹ thuật thiết kế vi mạch bán dẫn, Kỹ thuật điều khiển và tự động hóa, Kỹ thuật cơ điện tử, Kỹ thuật xây dựn
+  SUMMARY: doc_id_hits=5/5 content_answer_hits=3/5 score=6/10
+  A/B FILTER - Q1
+    without_filter:
+    1. score=0.7028 doc_id=hust-fami-scholarship-2025-2026 chunk=1
+    2. score=0.5247 doc_id=ou-admission-scholarship-2025 chunk=21
+    3. score=0.4898 doc_id=ou-admission-scholarship-2025 chunk=5
+      doc_hit=True content_hit=False points=0
+    with_student_filter:
+    1. score=0.7028 doc_id=hust-fami-scholarship-2025-2026 chunk=1
+    2. score=0.4788 doc_id=hust-fami-scholarship-2025-2026 chunk=2
+    3. score=0.4542 doc_id=hcmunre-freshman-scholarship-2025 chunk=7
+      doc_hit=True content_hit=True points=2
+
+=== STRATEGY: recursive (92 chunks) ===
+  Q1: Sau khi đăng ký trực tuyến, người học phải chuẩn bị và nộp minh chứng như thế nào?
+    1. score=0.6139 doc_id=hust-fami-scholarship-2025-2026 chunk=1
+    2. score=0.4745 doc_id=hcmunre-freshman-scholarship-2025 chunk=2
+    3. score=0.4334 doc_id=hust-fami-scholarship-2025-2026 chunk=2
+    doc_hit=True gold_rank=1 content_hit=True agent_correct=True points=2
+    agent: Sau đó, tất cả minh chứng cần nộp về Văn phòng Khoa tại C1-119 (Cô Nguyễn Thị Hải) từ: 12/11-20/11/2025.
+  Q2: Ba ngưỡng điểm xét tuyển của học bổng tân sinh viên TP.HCM năm 2025 là gì?
+    1. score=0.7632 doc_id=hcmunre-freshman-scholarship-2025 chunk=2
+    2. score=0.7526 doc_id=tdtu-scholarship-2025-2026 chunk=0
+    3. score=0.7181 doc_id=hust-fami-scholarship-2025-2026 chunk=2
+    doc_hit=True gold_rank=1 content_hit=True agent_correct=True points=2
+    agent: + Theo hình thức xét điểm kỳ thi tốt nghiệp THPT năm 2025: có điểm trúng tuyển 3 môn thi từ 18 điểm trở lên (không tính điểm ưu tiên, không nhân hệ số). + Theo hình thức xét học bạ THPT: có điểm tổ hợp 3 môn xét tuyển vào trường từ 22 điểm trở lên (không tính điểm ưu tiên, không nhân hệ số) hoặc đạt
+  Q3: Học bổng theo chính sách chung của Đại học Khoa học Huế được cấp vào thời điểm nào?
+    1. score=0.7313 doc_id=ou-admission-scholarship-2025 chunk=5
+    2. score=0.6841 doc_id=hust-fami-scholarship-2025-2026 chunk=2
+    3. score=0.6736 doc_id=ou-admission-scholarship-2025 chunk=56
+    doc_hit=False gold_rank=None content_hit=False agent_correct=False points=0
+    agent: Không tìm thấy đủ thông tin trong ngữ cảnh truy xuất.
+  Q4: Quy định học bổng tuyển sinh khóa 2025 của Đại học Mở áp dụng cho năm nhóm đối tượng nào?
+    1. score=0.7436 doc_id=ou-admission-scholarship-2025 chunk=55
+    2. score=0.7290 doc_id=ou-admission-scholarship-2025 chunk=17
+    3. score=0.7246 doc_id=husc-admission-scholarship-2025 chunk=13
+    doc_hit=True gold_rank=1 content_hit=True agent_correct=True points=2
+    agent: Thời gian xét, cấp học bổng: Học bổng tăng cường được xét, cấp vào học kỳ 1 năm học thứ nhất. Thủ khoa, Á khoa tuyển sinh toàn trường.
+  Q5: TDTU liệt kê những ngành kỹ thuật nào được áp dụng học bổng khuyến khích cho nữ sinh viên?
+    1. score=0.8214 doc_id=tdtu-scholarship-2025-2026 chunk=3
+    2. score=0.6676 doc_id=tdtu-scholarship-2025-2026 chunk=2
+    3. score=0.6300 doc_id=ou-admission-scholarship-2025 chunk=25
+    doc_hit=True gold_rank=1 content_hit=True agent_correct=True points=2
+    agent: - Học bổng khuyến khích cho nữ sinh viên học ngành kỹ thuật: 100% nữ sinh viên học các ngành kỹ thuật: Kỹ thuật điện, Kỹ thuật điện tử viễn thông, Kỹ thuật điện tử - viễn thông - chuyên ngành Kỹ thuật thiết kế vi mạch bán dẫn, Kỹ thuật điều khiển và tự động hóa, Kỹ thuật cơ điện tử, Kỹ thuật xây dựn
+  SUMMARY: doc_id_hits=4/5 content_answer_hits=4/5 score=8/10
+  A/B FILTER - Q1
+    without_filter:
+    1. score=0.6139 doc_id=hust-fami-scholarship-2025-2026 chunk=1
+    2. score=0.5057 doc_id=ou-admission-scholarship-2025 chunk=9
+    3. score=0.5050 doc_id=ou-admission-scholarship-2025 chunk=26
+      doc_hit=True content_hit=False points=0
+    with_student_filter:
+    1. score=0.6139 doc_id=hust-fami-scholarship-2025-2026 chunk=1
+    2. score=0.4745 doc_id=hcmunre-freshman-scholarship-2025 chunk=2
+    3. score=0.4334 doc_id=hust-fami-scholarship-2025-2026 chunk=2
+      doc_hit=True content_hit=True points=2
+
+=== STRATEGY: heading (149 chunks) ===
+  Q1: Sau khi đăng ký trực tuyến, người học phải chuẩn bị và nộp minh chứng như thế nào?
+    1. score=0.6737 doc_id=hust-fami-scholarship-2025-2026 chunk=2
+    2. score=0.6545 doc_id=hust-fami-scholarship-2025-2026 chunk=3
+    3. score=0.4186 doc_id=hust-fami-scholarship-2025-2026 chunk=1
+    doc_hit=True gold_rank=1 content_hit=True agent_correct=True points=2
+    agent: Sau đó, tất cả minh chứng cần nộp về Văn phòng Khoa tại C1-119 (Cô Nguyễn Thị Hải) từ: 12/11-20/11/2025.
+  Q2: Ba ngưỡng điểm xét tuyển của học bổng tân sinh viên TP.HCM năm 2025 là gì?
+    1. score=0.7693 doc_id=husc-admission-scholarship-2025 chunk=13
+    2. score=0.7526 doc_id=tdtu-scholarship-2025-2026 chunk=0
+    3. score=0.7368 doc_id=tdtu-scholarship-2025-2026 chunk=1
+    doc_hit=False gold_rank=None content_hit=False agent_correct=False points=0
+    agent: Không tìm thấy đủ thông tin trong ngữ cảnh truy xuất.
+  Q3: Học bổng theo chính sách chung của Đại học Khoa học Huế được cấp vào thời điểm nào?
+    1. score=0.7220 doc_id=husc-admission-scholarship-2025 chunk=13
+    2. score=0.7015 doc_id=ou-admission-scholarship-2025 chunk=100
+    3. score=0.6963 doc_id=ou-admission-scholarship-2025 chunk=91
+    doc_hit=True gold_rank=1 content_hit=False agent_correct=False points=0
+    agent: Không tìm thấy đủ thông tin trong ngữ cảnh truy xuất.
+  Q4: Quy định học bổng tuyển sinh khóa 2025 của Đại học Mở áp dụng cho năm nhóm đối tượng nào?
+    1. score=0.7599 doc_id=husc-admission-scholarship-2025 chunk=13
+    2. score=0.7510 doc_id=ou-admission-scholarship-2025 chunk=86
+    3. score=0.7430 doc_id=ou-admission-scholarship-2025 chunk=32
+    doc_hit=True gold_rank=2 content_hit=False agent_correct=False points=0
+    agent: Thủ khoa, Á khoa tuyển sinh toàn trường.
+  Q5: TDTU liệt kê những ngành kỹ thuật nào được áp dụng học bổng khuyến khích cho nữ sinh viên?
+    1. score=0.7221 doc_id=tdtu-scholarship-2025-2026 chunk=3
+    2. score=0.6647 doc_id=ou-admission-scholarship-2025 chunk=15
+    3. score=0.6626 doc_id=ou-admission-scholarship-2025 chunk=14
+    doc_hit=True gold_rank=1 content_hit=True agent_correct=True points=2
+    agent: - Học bổng khuyến khích cho nữ sinh viên học ngành kỹ thuật: 100% nữ sinh viên học các ngành kỹ thuật: Kỹ thuật điện, Kỹ thuật điện tử viễn thông, Kỹ thuật điện tử - viễn thông - chuyên ngành Kỹ thuật thiết kế vi mạch bán dẫn, Kỹ thuật điều khiển và tự động hóa, Kỹ thuật cơ điện tử, Kỹ thuật xây dựn
+  SUMMARY: doc_id_hits=4/5 content_answer_hits=2/5 score=4/10
+  A/B FILTER - Q1
+    without_filter:
+    1. score=0.6737 doc_id=hust-fami-scholarship-2025-2026 chunk=2
+    2. score=0.6545 doc_id=hust-fami-scholarship-2025-2026 chunk=3
+    3. score=0.4954 doc_id=ou-admission-scholarship-2025 chunk=55
+      doc_hit=True content_hit=True points=2
+    with_student_filter:
+    1. score=0.6737 doc_id=hust-fami-scholarship-2025-2026 chunk=2
+    2. score=0.6545 doc_id=hust-fami-scholarship-2025-2026 chunk=3
+    3. score=0.4186 doc_id=hust-fami-scholarship-2025-2026 chunk=1
+      doc_hit=True content_hit=True points=2
+
+FAILURE CASE
+Q1 fails under mock embeddings: topic-similar chunks outrank the FaMI procedure chunk, so the required strings C1-119 and 12/11-20/11/2025 are absent.
+Cause: MD5 mock vectors have no semantic signal; noisy menu/footer content and long duplicated source pages add irrelevant candidates.
+Proposed fix: clean the corpus, use a Vietnamese/multilingual embedding model, retain heading context, and add overlap or a lexical reranker for exact numbers.
